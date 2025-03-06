@@ -57,7 +57,9 @@ ax.set_title('3D Scatter Plot of Meshes')
 
 ax.set_axis_off()  # Hide the axes
 
+# Set the view angle
+ax.view_init(elev=-90, azim=120)  # Adjust these values to get the desired view
+
 # Show the plot
-plt.show()
-
-
+# plt.show()
+plt.savefig(f"Images/Figure_{args.mode}", dpi=300)

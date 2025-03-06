@@ -54,27 +54,27 @@ ICP is applied successfully, and unaligned measurements in the *before ICP* figu
 To apply ICP to <a href="http://graphics.stanford.edu/data/3Dscanrep/"> Stanford Bunny </a> use following commands
 
 ```
-python3 icp.py ./bunny/bun045.pts ./bunny/bun000.pts
-python3 icp.py ./bunny/bun090.pts ./bunny/bun045.pts
-python3 icp.py ./bunny/bun315.pts ./bunny/bun000.pts
-python3 icp.py ./bunny/bun270.pts ./bunny/bun315.pts
-python3 icp.py ./bunny/bun180.pts ./bunny/bun270.pts
-python3 icp.py ./bunny/chin.pts ./bunny/bun315.pts
-python3 icp.py ./bunny/ear_back.pts ./bunny/bun180.pts
-python3 icp.py ./bunny/top2.pts ./bunny/bun180.pts
-python3 icp.py ./bunny/top3.pts ./bunny/bun000.pts
+python icp.py ./bunny/bun045.pts ./bunny/bun000.pts
+python icp.py ./bunny/bun090.pts ./bunny/bun045.pts
+python icp.py ./bunny/bun315.pts ./bunny/bun000.pts
+python icp.py ./bunny/bun270.pts ./bunny/bun315.pts
+python icp.py ./bunny/bun180.pts ./bunny/bun270.pts
+python icp.py ./bunny/chin.pts ./bunny/bun315.pts
+python icp.py ./bunny/ear_back.pts ./bunny/bun180.pts
+python icp.py ./bunny/top2.pts ./bunny/bun180.pts
+python icp.py ./bunny/top3.pts ./bunny/bun000.pts
 
 ```
 
 To generate the bunny image after ICP alignment run following
 
 ```
-python3 view_pts_3D_matplotlib.py --mode output
+python view_pts_3D_matplotlib.py --mode output
 ```
 
 To generate the bunny image before ICP alignment run following
 ```
-python3 view_pts_3D_matplotlib.py --mode bunny
+python view_pts_3D_matplotlib.py --mode bunny
 ```
 
 
